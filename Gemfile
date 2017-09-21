@@ -46,6 +46,10 @@ gem 'react_on_rails', '8.0.0'
 
 #google and fb auth
 gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+
+# model annotation
+gem 'annotate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
