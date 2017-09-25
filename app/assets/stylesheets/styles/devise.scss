@@ -51,6 +51,23 @@
   color: $auth_link_color;
   margin-top: 3px;
 
+  .--fb_icon {
+    height: 40px;
+    width: auto;
+  }
+
+  .--google_icon {
+    height: 30px;
+    width: auto;
+    padding-left: 7px;
+    padding-right: 3px;
+  }
+
+  &.--big {
+    font-family: 'Raleway-ExtraBold';
+    font-size: $auth_button_font_size;
+  }
+
   &:focus, &:hover {
     text-decoration: none;
     color: $auth_link_color;
