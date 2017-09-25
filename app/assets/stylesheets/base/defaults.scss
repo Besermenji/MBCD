@@ -4,6 +4,13 @@ body {
   font-family: 'Raleway-Regular', Helvetica, Arial, sans-serif;
   background: $background;
   color: $font_default;
+  font-size: $font_size;
+}
+
+.row-eq-height {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
 }
 
 .margin-top-xxxlarge {
@@ -16,6 +23,19 @@ body {
 
 .margin-top-xlarge {
   margin-top: 100px;
+}
+
+
+@media (max-width: $tablet_width) {
+  .margin-top-xlarge-on-tablet {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: $tablet_width) {
+  .margin-top-large-on-tablet {
+    margin-top: 50px;
+  }
 }
 
 .margin-top-large {

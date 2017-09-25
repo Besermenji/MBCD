@@ -1,19 +1,24 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: 'form' }) do |f| %>
 <div class="form-group">
-  <%= f.label :email %>
-  <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+  <%= f.label :email, class: 'auth_label' %>
+  <%= f.email_field :email, autofocus: true, class: 'form-control auth_input' %>
 </div>
 <div class="form-group">
-  <%= f.label :password %>
-  <%= f.password_field :password, autocomplete: 'off', class: 'form-control' %>
+  <%= f.label :password, class: 'auth_label' %>
+  <%= f.password_field :password, autocomplete: 'off', class: 'form-control auth_input' %>
 </div>
 <% if devise_mapping.rememberable? %>
 <div class="checkbox">
-  <%= f.label :remember_me do %>
-  <%= f.check_box :remember_me %>
-  <%= t('.remember_me', default: 'Remember me') %>
+  <%= f.label :remember_me, class: 'auth_checkbox_label' do %>
+    <%= f.check_box :remember_me, class: 'auth_checkbox' %>
+    &nbsp;
+    <%= t('.remember_me', default: 'Remember me') %>
+  <% end %>
+  <% if devise_mapping.recoverable? && controller_name != 'passwords' %>
+    <%= link_to t('.forgot_your_password', default: 'Forgot your password?'), new_password_path(resource_name), class: 'auth_link --small pull-right' %>
   <% end %>
 </div>
+
+<%= f.submit  t('.log_in', default: 'Log In'), class: 'btn btn-primary auth_button pull-right' %>
 <% end %>
-<%= f.submit  t('.sign_in', default: 'Sign in'), class: 'btn btn-primary' %>
 <% end %>
