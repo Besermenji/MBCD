@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Raleway-Regular";
-  src: url(font-path('raleway/Raleway-Regular.ttf'));
+  src: font-url('raleway/Raleway-Regular.ttf');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url(font-path('raleway/Raleway-ExtraBold.ttf'));
+  src: font-url('raleway/Raleway-ExtraBold.ttf');
   font-style: normal;
   font-weight: normal;
 }
