@@ -27,3 +27,6 @@ node_modules
 
 # Generated js bundles
 /public/webpack/*
+
+# Ignore Mac DS_Store files
+.DS_Store
