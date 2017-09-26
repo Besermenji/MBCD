@@ -42,6 +42,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'react_on_rails', '9.0.0'
+gem 'jquery-rails'
 
 # google and fb auth
 gem 'omniauth-google-oauth2'

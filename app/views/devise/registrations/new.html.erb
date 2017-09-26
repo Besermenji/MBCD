@@ -1,16 +1,16 @@
-<%= bootstrap_devise_error_messages! %>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { role: 'form' }) do |f| %>
 <div class="form-group">
-  <%= f.label :email %>
-  <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+  <%= f.label :email, class: 'auth_label' %>
+  <%= f.email_field :email, autofocus: true, class: 'form-control auth_input' %>
 </div>
 <div class="form-group">
-  <%= f.label :password %>
-  <%= f.password_field :password, class: 'form-control' %>
+  <%= f.label :password, class: 'auth_label' %>
+  <%= f.password_field :password, class: 'form-control auth_input' %>
 </div>
 <div class="form-group">
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation, class: 'form-control' %>
+  <%= f.label :password_confirmation, class: 'auth_label' %>
+  <%= f.password_field :password_confirmation, class: 'form-control auth_input' %>
 </div>
-<%= f.submit t('.sign_up', default: 'Sign up'), class: 'btn btn-primary' %>
+<%= bootstrap_devise_error_messages! %>
+<%= f.submit t('.sign_up', default: 'Sign up'), class: 'btn btn-primary  auth_button pull-right' %>
 <% end %>

@@ -1,9 +1,8 @@
 <%= bootstrap_devise_error_messages! %>
-  <h4><%= t('.forgot_your_password', default: 'Forgot your password?') %></h4>
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, role: "form" }) do |f| %>
       <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, class: 'form-control' %>
-      <%= f.submit t('.send_me_reset_password_instructions', default: 'Send me reset password instructions'), class: 'btn btn-primary margin-top-medium' %>
+        <%= f.label :email, class: 'auth_label'%>
+        <%= f.email_field :email, autofocus: true, class: 'form-control auth_input' %>
+      <%= f.submit t('.reset_password', default: 'Reset password'), class: 'btn btn-primary margin-top-medium auth_button pull-right' %>
     <% end %>
   </div>

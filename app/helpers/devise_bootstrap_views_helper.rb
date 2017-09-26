@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 
 module DeviseBootstrapViewsHelper
-  def bootstrap_devise_error_messages!
+  def bootstrap_devise_error_messages!(top_margin=false)
     return '' if resource.errors.empty?
 
     messages = resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
