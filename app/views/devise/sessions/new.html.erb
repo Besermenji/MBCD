@@ -17,6 +17,7 @@
   <% if devise_mapping.recoverable? && controller_name != 'passwords' %>
     <%= link_to t('.forgot_your_password', default: 'Forgot your password?'), new_password_path(resource_name), class: 'auth_link --small pull-right' %>
   <% end %>
+  <%= devise_login_error_messages! %>
 </div>
 
 <%= f.submit  t('.log_in', default: 'Log In'), class: 'btn btn-primary auth_button pull-right' %>

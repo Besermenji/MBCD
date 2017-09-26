@@ -13,7 +13,8 @@ gem 'rails', '~> 5.1.3'
 gem 'pg'
 
 # devise for auth
-gem 'devise'
+gem 'devise', '~> 4.2'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 

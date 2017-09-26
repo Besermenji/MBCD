@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   get 'hello_world', to: 'hello_world#index'
-  root 'hello_world#index'
+  authenticated :user do
+    root 'hello_world#index'
+  end
+  root to: redirect('/login')
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
