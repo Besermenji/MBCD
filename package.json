@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "postinstall": "cd client && yarn install"
+    "postinstall": "cd client && npm install"
   },
 
   "name": "MBCD",
