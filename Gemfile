@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.2'
+gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # use postgresql
@@ -41,7 +41,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'react_on_rails', '8.0.0'
+gem 'react_on_rails', '9.0.0'
 
 # google and fb auth
 gem 'omniauth-google-oauth2'
@@ -84,3 +84,4 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'mini_racer', platforms: :ruby
 gem 'webpacker_lite'
+gem 'webpacker'

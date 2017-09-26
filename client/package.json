@@ -22,7 +22,7 @@
     "js-yaml": "^3.8.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-on-rails": "8.0.0",
+    "react-on-rails": "9.0.0",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "webpack": "^2.3.3",
